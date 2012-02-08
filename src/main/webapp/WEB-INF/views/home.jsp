@@ -5,10 +5,14 @@
 	<title>Tuiter  :)</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+<div style="top-padding:50px">&nbsp;</div>
+<div class="hero-unit">
+    <h1>Tuit</h1>
+    <p>Welcome to Tuit small message platform</p>
+    <p><a class="btn btn-primary btn-large" href="/user">Create Account</a></p>
+</div>
+    <section id="grid-system">
+        <div class="page-header">Last Tuets</div>
+    </section>
 </body>
 </html>

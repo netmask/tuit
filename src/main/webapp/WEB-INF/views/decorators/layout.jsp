@@ -15,9 +15,6 @@
 
 <div class="container">
 
-    <div id="header">
-        <h1>Twitter bootstrap lolo</h1>
-    </div>
     <div id="content">
         <decorator:body/>
     </div>

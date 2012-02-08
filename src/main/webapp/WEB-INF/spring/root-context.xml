@@ -6,8 +6,7 @@
 
 
     <bean class="java.net.URI" id="dbUrl">
-        <!-- <constructor-arg value="mysql://cc54f9dddc3d88:2954b569@us-mm-auto-dca-01.cleardb.com/heroku_076aa27462b372d"/> -->
-        <constructor-arg value="mysql://root:ubuntu@localhost/tuit"/>
+        <constructor-arg value="mysql://29751559354bf3:5a00c092@us-mm-auto-dca-01.cleardb.com/heroku_c797477bd9b7aa5"/>
     </bean>
 
     <bean id="dataSource"

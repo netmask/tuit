@@ -85,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="0.24742268">
+            <state line="8" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="-6.2222223">
               <folding />
             </state>
           </provider>
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="231" column="21" selection-start="8421" selection-end="8421" vertical-scroll-proportion="0.6602941">
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/SessionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/UsersController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/HomeController.java" />
@@ -178,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -693,11 +693,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
@@ -737,7 +732,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="0.24742268">
+        <state line="8" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="-6.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="21" selection-start="8421" selection-end="8421" vertical-scroll-proportion="0.6602941">
           <folding />
         </state>
       </provider>

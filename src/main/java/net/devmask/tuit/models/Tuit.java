@@ -1,6 +1,7 @@
 package net.devmask.tuit.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Tuit implements Serializable{
     @ManyToOne
     private User user;
 
-
+    @NotNull(message = "Can't tuit blank  ")
     private String content;
 
     @Temporal(TemporalType.TIMESTAMP)

@@ -15,7 +15,9 @@
     </h1>
         <form:form modelAttribute="user" action="user" method="post" class="form-horizontal">
             <fieldset>
-                <legend>Account Fields</legend>
+                    <legend>Account Fields</legend>
+                    <form:label	for="username" path="username" cssErrorClass="username" cssClass="control-label">Username</form:label>
+                    <form:input path="username" /> <form:errors path="username" />
 
                     <form:label	for="email" path="email" cssErrorClass="error" cssClass="control-label">Email</form:label>
                     <form:input path="email" /> <form:errors path="email" />

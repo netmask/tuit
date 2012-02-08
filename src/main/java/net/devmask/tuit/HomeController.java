@@ -1,5 +1,6 @@
 package net.devmask.tuit;
 
+import net.devmask.tuit.models.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -14,8 +15,8 @@ public class HomeController extends BaseController{
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-
+	public String home(Model model) {
+        model.addAttribute(new User());
 		return "home";
 	}
 	

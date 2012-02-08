@@ -11,12 +11,16 @@ import java.util.List;
  *         07/02/12 Creado
  */
 @Entity
-@Table(name="users")
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = { "email" }),name="users")
 public class User implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+
+    @NotNull(message = "Username cant be blank")
+    private String username;
 
     @NotNull(message = "Email cant be blank")
     private String email;
@@ -31,7 +35,9 @@ public class User implements Serializable{
     @OneToMany
     private List<User> following;
 
-
+    @OneToMany(mappedBy = "user")
+    private List<Tuit> tuits;
+    
     public String getEmail() {
         return email;
     }
@@ -70,5 +76,21 @@ public class User implements Serializable{
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public List<Tuit> getTuits() {
+        return tuits;
+    }
+
+    public void setTuits(List<Tuit> tuits) {
+        this.tuits = tuits;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

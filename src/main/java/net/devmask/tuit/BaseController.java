@@ -31,11 +31,16 @@ public class BaseController {
     }
     
     
-    public void persist(Serializable object){
+    public void persist(Serializable object) throws Exception {
         EntityManager entityManager = getEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(object);
-        entityManager.getTransaction().commit();
+        try{
+            entityManager.getTransaction().begin();
+            entityManager.persist(object);
+            entityManager.getTransaction().commit();
+        }catch(Exception ex){
+            entityManager.getTransaction().rollback();
+            throw new Exception(ex);
+        }
     }
     
     public void persist(Serializable... objects){

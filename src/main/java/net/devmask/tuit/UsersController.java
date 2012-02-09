@@ -37,7 +37,11 @@ public class UsersController extends BaseController{
     @RequestMapping(method = RequestMethod.POST)
     public String create(@Valid User user, BindingResult result,RedirectAttributes redirectAttributes){
         if(result.hasErrors()){ return "accounts/new"; }
-        persist(user);
+        try {
+            persist(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         tuitSession.login(user);
 
         return "redirect:/user/dashboard";
@@ -68,7 +72,11 @@ public class UsersController extends BaseController{
     @RequestMapping(value = "/tuit", method = RequestMethod.POST)
     public @ResponseBody Tuit newTuit(@Valid Tuit tuit, BindingResult result, Model model){
         tuit.setUser(tuitSession.getCurrentUser());
-        persist(tuit);
+        try {
+            persist(tuit);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return tuit;
     }
 

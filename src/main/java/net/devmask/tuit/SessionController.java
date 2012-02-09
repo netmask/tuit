@@ -26,9 +26,8 @@ public class SessionController extends BaseController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(User user, Model model, RedirectAttributes redirectAttributes) {
-        EntityManager em = getEntityManager();
 
-            User loginUser = (User) em.createNamedQuery("user.find.to_login")
+            User loginUser = (User) getEntityManager().createNamedQuery("user.find.to_login")
                     .setParameter("username", user.getUsername())
                     .setParameter("password", user.getPassword())
                     .getSingleResult();

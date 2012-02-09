@@ -37,9 +37,7 @@ public class UsersController extends BaseController{
     @RequestMapping(method = RequestMethod.POST)
     public String create(@Valid User user, BindingResult result,RedirectAttributes redirectAttributes){
         if(result.hasErrors()){ return "accounts/new"; }
-
         persist(user);
-        redirectAttributes.addAttribute("username",user.getUsername());
         tuitSession.login(user);
 
         return "redirect:/user/dashboard";
@@ -62,6 +60,7 @@ public class UsersController extends BaseController{
 
     @RequestMapping(value = "{username}/follow",method = RequestMethod.GET)
     public @ResponseBody List<User> toFollow(@RequestParam("username") String username){
+
         return tuitSession.getCurrentUser().getFollowing();
     }
 

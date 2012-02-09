@@ -4,7 +4,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <title><decorator:title default="Tuiter"/></title>
     <link rel="stylesheet" href="/resources/css/bootstrap.css"/>
     <link rel="stylesheet" href="/resources/css/bootstrap-responsive.css"/>
@@ -13,11 +12,9 @@
 <body>
 
 <div class="container">
-
     <div id="content">
         <decorator:body/>
     </div>
-
 </div>
 
 <script type="text/javascript" src="/resources/js/jquery-1.7.1.min.js" ></script>

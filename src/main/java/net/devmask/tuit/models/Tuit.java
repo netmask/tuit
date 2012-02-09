@@ -16,10 +16,10 @@ import java.util.List;
 @Table(name= "tuits")
 @NamedQueries({
         @NamedQuery(name = "user.timeline",
-                query = "SELECT t from User u, Tuit t " +
+                query = "SELECT distinct t from User u, Tuit t " +
                         "JOIN u.following following  " +
-                        "WHERE (t.user = following OR t.user = :user) " +
-                        "AND u = :user " +
+                        "WHERE (t.user = following and u= :user) " +
+                        "OR t.user = :user " +
                         "ORDER by t.stamp DESC " ),
 
         @NamedQuery(name = "user.timeline.since",

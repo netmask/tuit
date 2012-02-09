@@ -41,7 +41,7 @@ public class SessionController extends BaseController {
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(Model model,RedirectAttributes redirectAttributes) {
         tuitSession.logout();
-        redirectAttributes.addFlashAttribute("success","Loged our suscess. ");
+        redirectAttributes.addFlashAttribute("success","Loged in. ");
         return "redirect:/user/dashboard";
     }
 

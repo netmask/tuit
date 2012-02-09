@@ -13,6 +13,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="span8 offset2">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="span8 offset2">
             <form:form modelAttribute="tuit" action="/user/tuit" id="tuit-post" method="post">
             <div class="row well">
                 <div class="span7">

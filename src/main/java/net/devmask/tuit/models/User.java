@@ -18,7 +18,7 @@ import java.util.List;
 @NamedQueries({
     @NamedQuery(name = "user.find.to_login",
                 query = "SELECT u FROM User as u where u.username = :username AND u.password = :password"),
-        @NamedQuery(name = "user.get.timeline",
+        @NamedQuery(name = "user.by_",
                 query = "SELECT u FROM User as u where u.username = :username AND u.password = :password")
 })
 public class User implements Serializable{

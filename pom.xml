@@ -154,6 +154,19 @@
             <version>1.5.6</version>
         </dependency>
 
+        <!-- AOP dependency -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <!-- Jacson for json -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.9.4</version>
+        </dependency>
     </dependencies>
 
     <build>

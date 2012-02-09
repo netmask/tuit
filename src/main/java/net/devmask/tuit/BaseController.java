@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Query;
 import java.io.Serializable;
+import java.util.HashMap;
 
 /**
  * @author <a href="mailto:jonathan@devmask.net"> Jonathan Garay </a>
@@ -17,10 +19,6 @@ public class BaseController {
 
     public EntityManagerFactory getEntityManagerFactory() {
         return entityManagerFactory;
-    }
-
-    public void setEntityManagerFactory(EntityManagerFactory entityManagerFactory) {
-        this.entityManagerFactory = entityManagerFactory;
     }
 
     public EntityManager getEntityManager(){
@@ -42,4 +40,7 @@ public class BaseController {
         entityManager.getTransaction().commit();
     }
 
+    public Object callNamedQuery(String name){
+        return getEntityManager().createNamedQuery(name).getResultList();
+    }
 }

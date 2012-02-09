@@ -1008,6 +1008,11 @@
             <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
             <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.5.6" />
             <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
+            <element id="library" level="project" name="Maven: cglib:cglib:2.2" />
+            <element id="library" level="project" name="Maven: asm:asm:3.1" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.4" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.4" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.4" />
           </element>
         </element>
       </root>
@@ -1217,6 +1222,14 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="netmask">
+      <words>
+        <w>tuit</w>
+        <w>tuits</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/tuit.iml" filepath="$PROJECT_DIR$/tuit.iml" />
@@ -1257,6 +1270,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: asm:asm:3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: cglib:cglib:2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-collections:commons-collections:3.2.1">
@@ -1400,6 +1435,39 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.4/jackson-jaxrs-1.9.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.4/jackson-jaxrs-1.9.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.4/jackson-jaxrs-1.9.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.1.Final">

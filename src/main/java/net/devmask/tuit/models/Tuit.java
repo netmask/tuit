@@ -1,5 +1,7 @@
 package net.devmask.tuit.models;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -12,6 +14,27 @@ import java.util.List;
  */
 @Entity
 @Table(name= "tuits")
+@NamedQueries({
+        @NamedQuery(name = "user.timeline",
+                query = "SELECT t from User u, Tuit t " +
+                        "JOIN u.following following  " +
+                        "WHERE (t.user = following OR t.user = :user) " +
+                        "AND u = :user " +
+                        "ORDER by t.stamp DESC " ),
+
+        @NamedQuery(name = "user.timeline.since",
+                query = "SELECT t from User u, Tuit t " +
+                        "JOIN u.following following  " +
+                        "WHERE (t.user = following OR t.user = :user) " +
+                        "AND u = :user " +
+                        "AND t.stamp >= :date " +
+                        "ORDER by t.stamp DESC " ),
+
+        @NamedQuery(name = "all.tuits",
+                query = "SELECT t from User u, Tuit t ")
+
+
+})
 public class Tuit implements Serializable{
 
 
@@ -26,7 +49,7 @@ public class Tuit implements Serializable{
     private String content;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date stamp;
+    private Date stamp = new Date();
 
     public User getUser() {
         return user;
@@ -51,8 +74,6 @@ public class Tuit implements Serializable{
     public void setStamp(Date stamp) {
         this.stamp = stamp;
     }
-
-
 
     public int getId() {
         return id;

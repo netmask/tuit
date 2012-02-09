@@ -1,5 +1,8 @@
 package net.devmask.tuit.models;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.map.annotate.JsonFilter;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -12,6 +15,12 @@ import java.util.List;
  */
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = { "email" }),name="users")
+@NamedQueries({
+    @NamedQuery(name = "user.find.to_login",
+                query = "SELECT u FROM User as u where u.username = :username AND u.password = :password"),
+        @NamedQuery(name = "user.get.timeline",
+                query = "SELECT u FROM User as u where u.username = :username AND u.password = :password")
+})
 public class User implements Serializable{
 
     @Id
@@ -27,15 +36,19 @@ public class User implements Serializable{
 
     @NotNull(message = "Password cant be blank")
     @Size(min = 6, message = "The password must be greeter that 6")
+    @JsonIgnore
     private String password;
 
     @OneToMany
+    @JsonIgnore
     private List<User> followers;
 
     @OneToMany
+    @JsonIgnore
     private List<User> following;
 
     @OneToMany(mappedBy = "user")
+    @JsonIgnore
     private List<Tuit> tuits;
     
     public String getEmail() {

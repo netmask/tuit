@@ -6,7 +6,11 @@
 
 
     <bean class="java.net.URI" id="dbUrl">
+
         <constructor-arg value="mysql://29751559354bf3:5a00c092@us-mm-auto-dca-01.cleardb.com/heroku_c797477bd9b7aa5"/>
+        <!--
+        <constructor-arg value="mysql://root:ubuntu@localhost/tuit"/>
+        -->
     </bean>
 
     <bean id="dataSource"
@@ -39,5 +43,6 @@
                 class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
         <property name="dataSource" ref="dataSource"/>
-    </bean>		
+    </bean>
+
 </beans>

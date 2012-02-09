@@ -14,6 +14,8 @@ import java.util.HashMap;
  */
 public class BaseController {
 
+    private EntityManager entityManager = null;
+
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 
@@ -22,7 +24,10 @@ public class BaseController {
     }
 
     public EntityManager getEntityManager(){
-        return entityManagerFactory.createEntityManager();
+        if(entityManager==null){
+            entityManager = entityManagerFactory.createEntityManager();
+        }
+        return entityManager;
     }
     
     

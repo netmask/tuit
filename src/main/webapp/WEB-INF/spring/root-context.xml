@@ -9,23 +9,25 @@
 
         <!--              
         <constructor-arg value="mysql://29751559354bf3:5a00c092@us-mm-auto-dca-01.cleardb.com/heroku_c797477bd9b7aa5"/>
-                                <constructor-arg value="mysql://root:ubuntu@localhost:3306/tuit"/>        
-
+    
+<constructor-arg value="mysql://app2820278:YBvbzogy@int.instance5183.db.xeround.com:4031/app2820278"/>
                 -->
-          <constructor-arg value="mysql://app2820278:YBvbzogy@int.instance5183.db.xeround.com:4031/app2820278"/>
-                
+                <constructor-arg value="mysql://root:ubuntu@localhost:3306/tuit"/>
+
     </bean>
 
     <bean id="dataSource"
-                class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="#{ 'jdbc:mysql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
-        <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
+                class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="#{ 'jdbc:mysql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
+        <property name="user" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
         <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
+        <property name="maxPoolSize" value="4"/>        
     </bean>
+    
 
     <bean id="entityManagerFactory"
-                class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+                class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" scope="singleton">
         <property name="persistenceUnitName" value="tuit-pu"/>
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaDialect">
@@ -37,7 +39,7 @@
                 <property name="showSql" value="true"/>
                 <property name="generateDdl" value="true"/>
                 <property name="databasePlatform"
-                                value="org.hibernate.dialect.MySQL5Dialect"/>
+                                value="org.hibernate.dialect.MySQL5Dialect"/>  
             </bean>
         </property>
     </bean>

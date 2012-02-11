@@ -9,26 +9,30 @@
 <head>
 </head>
 <body>
-
-    <h1>
-        Create Account
-    </h1>
+<div class="row">
+    <div class="span6 offset2">
+        <h1>
+            Create Account
+        </h1>
         <form:form modelAttribute="user" action="user" method="post" class="form-horizontal">
             <fieldset>
-                    <legend>Account Fields</legend>
-                    <form:label	for="username" path="username" cssErrorClass="username" cssClass="control-label">Username</form:label>
-                    <form:input path="username" /> <form:errors path="username" />
+                <legend>Account Fields</legend>
+                <form:label	for="username" path="username" cssErrorClass="username" cssClass="control-label">Username</form:label>
+                <form:input path="username" /> <form:errors path="username" />
 
-                    <form:label	for="email" path="email" cssErrorClass="error" cssClass="control-label">Email</form:label>
-                    <form:input path="email" /> <form:errors path="email" />
+                <form:label	for="email" path="email" cssErrorClass="error" cssClass="control-label">Email</form:label>
+                <form:input path="email" /> <form:errors path="email" />
 
-                    <form:label for="password" path="password" cssErrorClass="password" cssClass="control-label">Password</form:label>
-                    <form:input path="password" /> <form:errors path="password" />
-
-                    <input type="submit" class="btn btn-primary"/>
+                <form:label for="password" path="password" cssErrorClass="password" cssClass="control-label">Password</form:label>
+                <form:input path="password" /> <form:errors path="password" />
+                <br/>
+                <br/>
+                <input type="submit" class="btn btn-primary"/>
 
             </fieldset>
         </form:form>
+    </div>
+</div>
 
 </body>
 </html>

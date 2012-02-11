@@ -1,5 +1,6 @@
 package net.devmask.tuit.models;
 
+import org.codehaus.jackson.annotate.JsonBackReference;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
@@ -31,8 +32,9 @@ import java.util.List;
                         "ORDER by t.stamp DESC " ),
 
         @NamedQuery(name = "all.tuits",
-                query = "SELECT t from User u, Tuit t ")
+                query = "SELECT t from User u, Tuit t "),
 
+        @NamedQuery(name = "all.tuits.since", query = "SELECT t from User u, Tuit t WHERE t.stamp  >= :date ")
 
 })
 public class Tuit implements Serializable{
@@ -43,6 +45,7 @@ public class Tuit implements Serializable{
     private int id;
 
     @ManyToOne
+    @JsonBackReference
     private User user;
 
     @NotNull(message = "Can't tuit blank  ")

@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -18,9 +19,10 @@ public class HomeController extends BaseController{
     @RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
         model.addAttribute(new User());
-        model.addAttribute("tuits", (List<Tuit>)getEntityManager()
-                                            .createNamedQuery("all.tuits")
-                                            .getResultList());
+        model.addAttribute("tuits", (List<Tuit>) getEntityManager()
+                .createNamedQuery("all.tuits")
+                .setMaxResults(10)
+                .getResultList());
 		return "home";
 	}
 	

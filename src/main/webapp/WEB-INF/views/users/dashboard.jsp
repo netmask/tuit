@@ -14,9 +14,8 @@
     <div class="row">
         <div class="span8 offset2">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
+                <li><a  data-toggle="modal" href="#following-md" >Following</a></li>
+                <li><a  data-toggle="modal" href="#find-user-md" >Find Users</a></li>
             </ul>
         </div>
         <div class="span8 offset2">
@@ -46,5 +45,44 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="following-md">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Following this user</h3>
+    </div>
+    <div class="modal-body">
+        <p>Netmask unfollow</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn btn-primary">Save changes</a>
+        <a href="#" class="btn">Close</a>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="find-user-md">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Find Users</h3>
+        <input type="text" class="input-medium search-query" placeholder="username" id="username-search">
+    </div>
+    <div class="modal-body" id="user-search-res">
+
+    </div>
+    <div class="modal-footer">
+    </div>
+</div>
+
+<script type="text/template" id="tuit">
+ tuti
+</script>
+
+
+<scri bpt type="text/template" id="user">
+    user
+</script>
+
 </body>
 </html>

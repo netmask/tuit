@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,8 +19,8 @@ import java.util.List;
 @NamedQueries({
     @NamedQuery(name = "user.find.to_login",
                 query = "SELECT u FROM User as u where u.username = :username AND u.password = :password"),
-        @NamedQuery(name = "user.by_",
-                query = "SELECT u FROM User as u where u.username = :username AND u.password = :password")
+        @NamedQuery(name = "user.by_username.like",
+                query = "SELECT u FROM User as u where u.username LIKE :username ")
 })
 public class User implements Serializable{
 
@@ -68,6 +69,9 @@ public class User implements Serializable{
     }
 
     public List<User> getFollowers() {
+        if(this.followers == null){
+            this.followers = new ArrayList<User>();
+        }
         return followers;
     }
 
@@ -76,6 +80,9 @@ public class User implements Serializable{
     }
 
     public List<User> getFollowing() {
+        if(this.following == null){
+            this.following = new ArrayList<User>();
+        }
         return following;
     }
 
@@ -92,6 +99,9 @@ public class User implements Serializable{
     }
 
     public List<Tuit> getTuits() {
+        if(this.tuits == null){
+            this.tuits = new ArrayList<Tuit>();
+        }
         return tuits;
     }
 

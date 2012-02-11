@@ -7,7 +7,7 @@
 
 <html>
 <head>
-    <title>Tuiter :)</title>
+    <title> Tuiter :) </title>
 </head>
 <body>
 <div style="top-padding:50px">&nbsp;</div>
@@ -31,7 +31,7 @@
         <div class="span5">
             <h1>Tuit</h1>
 
-            <p>Welcome to Tuit small message platform</p>
+            <p>Welcome to Tuit small message platform.</p>
 
             <p><a class="btn btn-primary btn-large" href="/user">Create Account</a></p>
         </div>
@@ -39,6 +39,9 @@
 </div>
 <section id="grid-system">
     <div class="page-header">Last Tuets</div>
+    <c:forEach var="tuit" items="${tuits}">
+        tuit
+    </c:forEach>
 </section>
 </body>
 </html>

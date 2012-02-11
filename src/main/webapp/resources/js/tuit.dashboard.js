@@ -32,4 +32,40 @@ $(document).ready(function() {
         var charLength = $(this).val().length;
         $('span#charCount').html(charLength);
     });
+
+    $('input#username-search').keyup(function() {
+        var query = $('input#username-search')[0].value;
+        $('#user-search-res').empty();
+        if(query){
+            $.ajax({
+                url: '/user/find',
+                context: document.body,
+                type: "GET",
+                dataType: 'text',
+                data: 'username='+query,
+                complete: function(data){
+                    $.each(jQuery.parseJSON(data.responseText), function(i, item){
+                        $('<span id="' +item.id + '"> <h4>User</h4> '
+                            +item.username+'</span>'+ '<div><a id="'+ item.username +'" class="follow">folllow</a></div>')
+                            .appendTo('#user-search-res');
+                    });
+
+                    $("a.follow").click(function(){
+                        $.ajax({
+                            url: $(this).attr("action"),
+                            context: document.body,
+                            type: "GET",
+                            dataType: 'json',
+                            data: $(this).serialize(),
+                            complete: function(data){
+                                update_tuit(data);
+                            }
+                        });
+
+                    });
+                }
+            });
+        }
+    });
+
 });

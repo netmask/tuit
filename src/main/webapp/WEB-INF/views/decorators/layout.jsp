@@ -7,6 +7,7 @@
     <title><decorator:title default="Tuiter"/></title>
     <link rel="stylesheet" href="/resources/css/bootstrap.css"/>
     <link rel="stylesheet" href="/resources/css/bootstrap-responsive.css"/>
+
     <decorator:head/>
 </head>
 <body>
@@ -19,7 +20,9 @@
 
 <script type="text/javascript" src="/resources/js/jquery-1.7.1.min.js" ></script>
 <script type="text/javascript" src="/resources/js/bootstrap.js" ></script>
-<script type="text/javascript" src="/resources/js/tuit.dashboard.js" ></script>
+<script type="text/javascript" src="/resources/js/underscore-min.js"></script>
+<script type="text/javascript" src="/resources/js/backbone-min.js"></script>
+<script type="text/javascript" src="/resources/js/tuit.dashboard.backbone.js" ></script>
 
 </body>
 </html>

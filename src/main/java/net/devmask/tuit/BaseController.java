@@ -1,10 +1,12 @@
 package net.devmask.tuit;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
+import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 import java.util.HashMap;
 
@@ -53,4 +55,9 @@ public class BaseController {
     public Object callNamedQuery(String name){
         return getEntityManager().createNamedQuery(name).getResultList();
     }
+
+//    @ExceptionHandler(NullPointerException.class)
+//    public String handleException(NullPointerException ex, HttpServletRequest request) {
+//        return "redirect:/";
+//    }
 }

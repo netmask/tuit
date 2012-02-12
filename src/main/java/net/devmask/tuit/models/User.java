@@ -20,7 +20,7 @@ import java.util.List;
     @NamedQuery(name = "user.find.to_login",
                 query = "SELECT u FROM User as u where u.username = :username AND u.password = :password"),
         @NamedQuery(name = "user.by_username.like",
-                query = "SELECT u FROM User as u where u.username LIKE :username ")
+                query = "SELECT u FROM User as u where u.username LIKE :username")
 })
 public class User implements Serializable{
 
@@ -39,12 +39,14 @@ public class User implements Serializable{
     @Size(min = 6, message = "The password must be greeter that 6")
     @JsonIgnore
     private String password;
+    
+    private String avatarName;
 
-    @OneToMany
+    @ManyToMany
     @JsonIgnore
     private List<User> followers;
 
-    @OneToMany
+    @ManyToMany
     @JsonIgnore
     private List<User> following;
 
@@ -115,5 +117,13 @@ public class User implements Serializable{
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getAvatarName() {
+        return avatarName;
+    }
+
+    public void setAvatarName(String avatarName) {
+        this.avatarName = avatarName;
     }
 }

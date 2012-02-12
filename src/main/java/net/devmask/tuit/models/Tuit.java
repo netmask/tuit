@@ -16,6 +16,7 @@ import java.util.List;
 @Entity
 @Table(name= "tuits")
 @NamedQueries({
+        //needs better sql strategy
         @NamedQuery(name = "user.timeline",
                 query = "SELECT distinct t from User u, Tuit t " +
                         "JOIN u.following following  " +
@@ -24,10 +25,11 @@ import java.util.List;
                         "ORDER by t.stamp ASC " ),
 
         @NamedQuery(name = "user.timeline.since",
-                query = "SELECT t from User u, Tuit t " +
+                query = "SELECT DISTINCT t from User u, Tuit t " +
                         "JOIN u.following following  " +
                         "WHERE (t.user = following OR t.user = :user) " +
                         "AND u = :user " +
+                        "AND t.user != :user " +
                         "AND t.stamp >= :date " +
                         "ORDER by t.stamp ASC " ),
 

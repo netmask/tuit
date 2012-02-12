@@ -977,7 +977,7 @@
             <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.6.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-context:3.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.1.0.RELEASE" />
@@ -1007,6 +1007,8 @@
             <element id="library" level="project" name="Maven: hsqldb:hsqldb:1.8.0.7" />
             <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
             <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+            <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
+            <element id="library" level="project" name="Maven: commons-io:commons-io:2.0.1" />
             <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
             <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.5.6" />
             <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
@@ -1229,6 +1231,7 @@
       <words>
         <w>tuit</w>
         <w>tuits</w>
+        <w>tuti</w>
       </words>
     </dictionary>
   </component>
@@ -1327,6 +1330,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-io:commons-io:2.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-logging:commons-logging:1.1.1">
@@ -1659,15 +1684,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.0.RELEASE/spring-security-web-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework:spring-aop:3.0.6.RELEASE">
+    <library name="Maven: org.springframework:spring-aop:3.1.0.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-asm:3.1.0.RELEASE">

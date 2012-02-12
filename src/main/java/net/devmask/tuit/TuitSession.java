@@ -50,7 +50,9 @@ public class TuitSession {
     }
 
     public Date getLastQuery() {
-        return lastQuery;
+        Date last = lastQuery;
+        lastQuery = new Date(); // ugly
+        return last;
     }
 
     public void setLastQuery(Date lastQuery) {

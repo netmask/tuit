@@ -1,10 +1,9 @@
 package net.devmask.tuit;
 
-import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 
 /**
  * @author <a href="mailto:jonathan@devmask.net"> Jonathan Garay </a>
@@ -17,4 +16,6 @@ public class TuitInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext dispatcherContext = new AnnotationConfigWebApplicationContext();
         dispatcherContext.register(WebConfig.class);
     }
+
+
 }

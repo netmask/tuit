@@ -81,7 +81,7 @@
       <file leaf-file-name="root-context.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="64" selection-start="962" selection-end="962" vertical-scroll-proportion="0.60546285">
+            <state line="18" column="63" selection-start="897" selection-end="897" vertical-scroll-proportion="0.57359636">
               <folding />
             </state>
           </provider>
@@ -1377,7 +1377,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="64" selection-start="962" selection-end="962" vertical-scroll-proportion="0.60546285">
+        <state line="18" column="63" selection-start="897" selection-end="897" vertical-scroll-proportion="0.57359636">
           <folding />
         </state>
       </provider>

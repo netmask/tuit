@@ -17,7 +17,7 @@
                     <constructor-arg value="mysql://root:ubuntu@localhost:3306/tuit"/>
                 -->
 
-        <constructor-arg value="${XEROUND_DATABASE_INTERNAL_URL }"/>
+        <constructor-arg value="${XEROUND_DATABASE_INTERNAL_URL}"/>
 
     </bean>
 

@@ -39,11 +39,6 @@
         </div>
     </div>
 </div>
-<section id="grid-system">
-    <div class="page-header">Last Tuets</div>
-    <c:forEach var="tuit" items="${tuits}">
-        tuit
-    </c:forEach>
-</section>
+
 </body>
 </html>

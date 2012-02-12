@@ -58,28 +58,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UsersController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/UsersController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DashboardController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/DashboardController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="15" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TuitsController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/TuitsController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,30 +67,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="15" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-24.11111">
+            <state line="31" column="33" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-0.7777778">
               <folding>
-                <marker date="1329066110000" expanded="true" signature="1233:1245" placeholder="{...}" />
+                <marker date="1329069281000" expanded="true" signature="1233:1245" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tuit.dashboard.backbone.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="root-context.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="64" selection-start="962" selection-end="962" vertical-scroll-proportion="0.60546285">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tuit.dashboard.backbone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tuit.dashboard.backbone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="36" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.5056657">
+            <state line="107" column="36" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/UsersController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="35" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,9 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="13" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#577#607#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accounts/new.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/decorators/TuitDecorator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/FollowersController.java" />
@@ -186,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/TuitsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/devmask/tuit/models/Tuit.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tuit.dashboard.backbone.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
       </list>
     </option>
   </component>
@@ -751,12 +748,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Jetty Server.Jetty">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -847,27 +844,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local">
       <deployment />
       <server-settings>
@@ -891,15 +867,25 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="com.intellij.dmserver.run.DMServerRunConfigurationType:id" factoryName="Spring dmServer (Local)">
@@ -917,11 +903,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+      </JSRemoteDebuggerConfigurationSettings>
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -953,6 +939,17 @@
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 71">
@@ -1200,7 +1197,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18893678" sideWeight="0.47019866" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24568966" sideWeight="0.5615894" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497126" sideWeight="0.5615894" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4384106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16451149" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1269,23 +1266,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accounts/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="327" selection-end="327" vertical-scroll-proportion="-6.2222223">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="78" selection-start="583" selection-end="583" vertical-scroll-proportion="7.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1313,9 +1296,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="15" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tuit.dashboard.backbone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="36" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="39" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1327,18 +1338,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#577#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/TuitSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="39" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1346,27 +1348,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/UsersController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="35" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/devmask/tuit/controllers/DashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-24.11111">
-          <folding>
-            <marker date="1329066110000" expanded="true" signature="1233:1245" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,11 +1366,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tuit.dashboard.backbone.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="36" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.5056657">
+        <state line="31" column="33" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-0.7777778">
+          <folding>
+            <marker date="1329069281000" expanded="true" signature="1233:1245" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="64" selection-start="962" selection-end="962" vertical-scroll-proportion="0.60546285">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>

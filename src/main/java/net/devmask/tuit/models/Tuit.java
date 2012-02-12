@@ -21,7 +21,7 @@ import java.util.List;
                         "JOIN u.following following  " +
                         "WHERE (t.user = following and u= :user) " +
                         "OR t.user = :user " +
-                        "ORDER by t.stamp DESC " ),
+                        "ORDER by t.stamp ASC " ),
 
         @NamedQuery(name = "user.timeline.since",
                 query = "SELECT t from User u, Tuit t " +
@@ -29,7 +29,7 @@ import java.util.List;
                         "WHERE (t.user = following OR t.user = :user) " +
                         "AND u = :user " +
                         "AND t.stamp >= :date " +
-                        "ORDER by t.stamp DESC " ),
+                        "ORDER by t.stamp ASC " ),
 
         @NamedQuery(name = "all.tuits",
                 query = "SELECT t from User u, Tuit t "),
@@ -45,7 +45,6 @@ public class Tuit implements Serializable{
     private int id;
 
     @ManyToOne
-    @JsonBackReference
     private User user;
 
     @NotNull(message = "Can't tuit blank  ")

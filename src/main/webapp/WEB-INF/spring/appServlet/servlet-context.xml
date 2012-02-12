@@ -24,4 +24,5 @@
     <context:component-scan base-package="net.devmask.tuit" scoped-proxy="targetClass"/>
 
 
+
 </beans:beans>

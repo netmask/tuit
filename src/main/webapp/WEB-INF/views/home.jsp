@@ -17,6 +17,17 @@
     <div class="row">
         <div class="span5">
             <h3>Login</h3>
+            <c:if test="${not empty error}">
+                <div class="alert alert-error">
+                    ${error}
+                </div>
+            </c:if>
+
+            <c:if test="${not empty success}">
+                <div class="alert alert-info">
+                        ${success}
+                </div>
+            </c:if>
             <form:form modelAttribute="user" action="/session/login" method="post" class="form-horizontal">
 
                 <form:label for="username" path="username" cssErrorClass="username" cssClass="control-label">Username</form:label>
@@ -24,7 +35,7 @@
 
                 <form:label for="password" path="password" cssErrorClass="password"
                             cssClass="control-label">Password</form:label>
-                <form:input path="password"/> <form:errors path="password"/>
+                <form:password path="password"/> <form:errors path="password"/>
                 <br/>
                 <br/>
                 <input type="submit" class="btn btn-primary"/>

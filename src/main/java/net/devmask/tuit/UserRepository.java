@@ -67,4 +67,11 @@ public class UserRepository {
         return follower;
     }
 
+    
+    @Transactional
+    public void saveSettings(User user){
+        entityManager.getTransaction().begin();
+        entityManager.persist(user);
+        entityManager.getTransaction().commit();
+    }
 }

@@ -20,6 +20,7 @@
         </div>
         <div class="span2" style="padding-top:9px">
              <span >Welcome ${user.username}</span>
+             <span><a href="/session/logout"> Logout </a></span>
         </div>
         <div class="span8 offset2" id="tuit-app">
             <form:form modelAttribute="tuit" action="/user/tuit" id="tuit-post" method="post">

@@ -29,8 +29,7 @@ public class TuitSession {
     }
     
     public void logout(){
-        currentUser = new User();
-        logedIn = false;        
+        logedIn = false;
     }
     
     public User getCurrentUser() {

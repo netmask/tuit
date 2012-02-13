@@ -28,21 +28,22 @@ public class SessionController {
     private UserRepository repository;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(User user, Model model, RedirectAttributes redirectAttributes) {
-        tuitSession.login(repository.findLogin(user));
+    public String login(User user, RedirectAttributes redirectAttributes) {
+        try{
+            tuitSession.login(repository.findLogin(user));
+        }catch (NoResultException nre){
+            redirectAttributes.addFlashAttribute("error","Email or password incorrect try again");
+            return "redirect:/";
+        }
         return "redirect:/user/dashboard";
     }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(Model model,RedirectAttributes redirectAttributes) {
         tuitSession.logout();
-        redirectAttributes.addFlashAttribute("success","Logged out in. ");
-        return "redirect:/user/dashboard";
+        redirectAttributes.addFlashAttribute("success","Success Logged out. ");
+        return "redirect:/";
     }
 
-    @ExceptionHandler
-    public String handle(NoResultException e, Model model) {
-        model.addAttribute("error","Email or password incorrect try again");
-        return "redirect:/users/home";
-    }
+
 }
